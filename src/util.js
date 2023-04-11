@@ -18,27 +18,3 @@ export function format_text(text) {
 		.replace(/\[(.*?)\]\((.*?)\)/gim, "<a target='_blank' href='$2'>$1</a>")
 		.replace(/\n$/gim, '<br />')
 }
-
-// .replace(/^(?:######)\s*(.+?)[ \t]*$/gm, "<h6>$1</h6>")
-// .replace(/^(?:#####)\s*(.+?)[ \t]*$/gm, "<h5>$1</h5>")
-// .replace(/^(?:####)\s*(.+?)[ \t]*$/gm, "<h4>$1</h4>")
-// .replace(/^(?:###)\s*(.+?)[ \t]*$/gm, "<h3>$1</h3>")
-// .replace(/^(?:##)\s*(.+?)[ \t]*$/gm, "<h2>$1</h2>")
-// .replace(/^(?:#)\s*(.+?)[ \t]*$/gm, "<h1>$1</h1>")
-// export function format_text(markdownText) {
-// 	const htmlText = markdownText
-// 		.replace(/^### (.*$)/gim, '<h3>$1</h3>')
-// 		.replace(/^## (.*$)/gim, '<h2>$1</h2>')
-// 		.replace(/^# (.*$)/gim, '<h1>$1</h1>')
-//      .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
-// 		.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-// 		.replace(/\*(.*)\*/gim, '<i>$1</i>')
-// 		.replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
-// 		.replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
-// 		.replace(/\n$/gim, '<br />')
-// 	return htmlText.trim()
-// }
-// ![Alt text](url)
-// const image = /!\[(.*?)\]\((.*?)\)/gim
-// [text](url)
-// const lineBreak = /\n$/gim
